@@ -1,26 +1,26 @@
-Extract Transform Load (ETL) Example
-====================================
+Baseline Taken from: apache-camel-2.10.1\examples\camel-example-jms-file
 
-This example shows how to use Camel as an ETL tool
-  http://camel.apache.org/etl.html
+JMS & File Example
+==================
 
-For a full description of this example please see
-  http://camel.apache.org/etl-example.html
+This example shows how to work with files and JMS. 
 
+The example consumes messages from a queue and writes them to the file
+system.
+  
 You will need to compile this example first:
   mvn compile
+  
+The example should run if you type
+  mvn exec:java -PExample
 
-To run the example type
-  mvn camel:run
+After the example is complete, then there should be 10 files written
+in the test directory.
 
-You can see the routing rules by looking at the java code in the src/main/java
-directory and the Spring XML configuration lives in
-  src/main/resources/META-INF/spring
+This example is documented at
+  http://camel.apache.org/walk-through-an-example.html
 
-To stop the example hit ctrl + c
-
-
-If you hit any problems please let us know on the Camel Forums
+If you hit an problems please let us know on the Camel Forums
   http://camel.apache.org/discussion-forums.html
 
 Please help us make Apache Camel better - we appreciate any feedback you may
@@ -28,5 +28,6 @@ have.  Enjoy!
 
 ------------------------
 The Camel riders!
+
 
 
