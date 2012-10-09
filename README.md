@@ -1,5 +1,8 @@
 Baseline Taken from: apache-camel-2.10.1\examples\camel-example-jms-file
 
+http://camel.apache.org/polling-consumer.html
+http://camel.apache.org/pojo-messaging-example.html
+
 JMS & File Example
 ==================
 
