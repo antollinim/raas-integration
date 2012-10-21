@@ -31,7 +31,7 @@
 	<bean id="jms" class="org.apache.activemq.camel.component.ActiveMQComponent">
 		<!-- property name="brokerURL" value="tcp://localhost:61610"/ -->
 		<!-- property name="brokerURL" value="vm://localhost" / -->
-		<property name="brokerURL" value="tcp://lenovo:61616" />
+		<property name="brokerURL" value="tcp://localhost:61616" />
 	</bean>
 	
 	<bean id="myProcessor" class="org.apache.camel.example.jmstofile.MyProcessor"/>

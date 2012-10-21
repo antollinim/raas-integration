@@ -82,7 +82,28 @@
 			<artifactId>slf4j-log4j12</artifactId>
 			<version>1.7.1</version>
 		</dependency>
-
+        <dependency>
+            <groupId>org.apache.camel</groupId>
+            <artifactId>camel-cxf</artifactId>
+            <version>2.10.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.camel</groupId>
+            <artifactId>camel-jackson</artifactId>
+            <version>2.10.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.camel</groupId>
+            <artifactId>camel-gson</artifactId>
+            <version>2.10.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.camel</groupId>
+            <artifactId>camel-xstream</artifactId>
+            <version>2.10.1</version>
+        </dependency>
+        
+        
 	</dependencies>
 
 	<profiles>
@@ -90,7 +111,8 @@
 			<id>Example</id>
 			<properties>
 				<!-- target.main.class>org.apache.camel.example.jmstofile.CamelJmsToFileExample</target.main.class -->
-				<target.main.class>org.apache.camel.example.jmstofile.JMSServer</target.main.class>
+				<!-- target.main.class>org.apache.camel.example.jmstofile.JMSServer</target.main.class -->
+				<target.main.class>org.apache.camel.example.jmstofile.App</target.main.class>
 			</properties>
 		</profile>
 	</profiles>
@@ -112,7 +134,8 @@
 				<!-- optional, default value: org.apache.camel.spring.Main -->
 				<configuration>
 					<!-- >mainClass>org.apache.camel.example.jmstofile.CamelJmsToFileExample</mainClass -->
-					<mainClass>org.apache.camel.example.jmstofile.JMSServer</mainClass>
+					<!-- mainClass>org.apache.camel.example.jmstofile.JMSServer</mainClass -->
+					<mainClass>org.apache.camel.example.jmstofile.App</mainClass>
 	                <!--  fileApplicationContextUri>
                         src/main/webapp/WEB-INF/camel*.xml;
                         src/test/spring/test-context.xml
